@@ -182,7 +182,8 @@ void Shape::Reset()
    
 void Shape::Scale(float sf) 
 {
-	// TO DO
+	width = width * sf;
+    height = height * sf;
 }
 
 /* ----------------------------
