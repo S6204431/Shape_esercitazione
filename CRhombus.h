@@ -1,6 +1,6 @@
 /*! \file Rhombus.h
     \brief Declaration of the class Rhombus
-    \author Alessandro Passaggio
+    \author Alessandro Passaggio - Gregorio Bertelli
 */
 
 #ifndef RHOMBUS_H

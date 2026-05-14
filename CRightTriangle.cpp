@@ -1,6 +1,6 @@
 /*! \file CRightTriangle.cpp
     \brief implementation of class RightTriangle
-    \author Alessandro Passaggio
+    \author Alessandro Passaggio - Gregorio Bertelli
 */
 
 #include "CRightTriangle.h"
@@ -107,6 +107,9 @@ float RightTriangle::GetHeight()
 {
     return height;
 }
+
+/// @brief to get the hypotenuse of the RightTriangle
+/// @return hypotenuse
 float RightTriangle::GetHypotenuse()
 {
     return sqrt(width * width + height * height);

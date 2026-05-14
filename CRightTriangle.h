@@ -1,6 +1,6 @@
 /*! \file CRightTriangle.h
     \brief Declaration of the class RightTriangle
-    \author Alessandro Passaggio
+    \author Alessandro Passaggio - Gregorio Bertelli
 */
 
 #ifndef RightTriangle_H
