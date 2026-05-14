@@ -4,6 +4,7 @@
 #include "CShape.h"
 #include "CRectangle.h"
 #include "CRhombus.h"
+#include "CRightTriangle.h"
 
 using namespace std;
 
@@ -19,11 +20,13 @@ int main()
     // 1. Creazione figure
     shapes[nShapes++] = new Rectangle(0, 0, 10, 5);
     shapes[nShapes++] = new Rhombus(2, 2, 10, 6);
+    shapes[nShapes++] = new RightTriangle(0, 0, 10, 5);
 
 
     // 2. Impostazione testo
     shapes[0]->SetText("rettangolo");
     shapes[1]->SetText("rombo");
+    shapes[2]->SetText("triangolo destro");
 
 
     // 3. Dump polimorfico
