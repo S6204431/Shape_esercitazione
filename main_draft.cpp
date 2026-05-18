@@ -18,8 +18,8 @@ int main()
     cout << "===== TEST GERARCHIA SHAPE =====" << endl;
 
     // 1. Creazione figure
-    shapes[nShapes++] = new Rectangle(0, 0, 10, 5);
-    shapes[nShapes++] = new Rhombus(2, 2, 10, 6);
+    shapes[nShapes++] = new Rectangle(0, 0, 10, 6);
+    shapes[nShapes++] = new Rhombus(2, 2, 3, 4);
     shapes[nShapes++] = new RightTriangle(0, 0, 10, 5);
 
 
@@ -37,14 +37,25 @@ int main()
         shapes[i]->Dump();
     }
 
+    // 4. Test funzione scale
+    cout << endl << "===== DUMP RISCALATO =====" << endl;
+    shapes[0]->Scale(0.5);
+    shapes[1]->Scale(2.5);
+    shapes[2]->Scale(-1);
+
+    for (int i = 0; i < nShapes; i++) {
+        cout << endl << "Figura [" << i << "]" << endl;
+        shapes[i]->Dump();
+    }
+
+
+    // 5. delete shapes
     for (int i = 0; i < nShapes; i++) {
         if(shapes[i] != NULL)
         {
             delete(shapes[i]);
         }
     }
- 
-
 
     cout << endl << "===== FINE TEST =====" << endl;
 
