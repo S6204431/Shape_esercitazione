@@ -18,7 +18,7 @@ int main()
     cout << "===== TEST GERARCHIA SHAPE =====" << endl;
 
     // 1. Creazione figure
-    shapes[nShapes++] = new Rectangle(0, 0, 10, 6);
+    shapes[nShapes++] = new Rectangle(0, 0, 10, -6);    //darà un perimetro di 20 dopo il clamp a 0 di -6: topologicamente è corretto anche se un segmento non racchiude alcuna area...
     shapes[nShapes++] = new Rhombus(2, 2, 3, 4);
     shapes[nShapes++] = new RightTriangle(0, 0, 10, 5);
 
