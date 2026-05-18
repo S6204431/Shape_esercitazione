@@ -94,7 +94,7 @@ void RightTriangle::Reset()
    ---------------------------- */
    
 /// @brief to get the horizontal cathetus of the RightTriangle
-/// @return height
+/// @return width
 float RightTriangle::GetHCathetus()
 {
 	return width;
@@ -102,7 +102,7 @@ float RightTriangle::GetHCathetus()
 }
 
 /// @brief to get the vertical cathetus of the RightTriangle
-/// @return width
+/// @return height
 float RightTriangle::GetVCathetus()
 {
     return height;
